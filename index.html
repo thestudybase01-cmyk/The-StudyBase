@@ -1,4 +1,4 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -61,6 +61,21 @@
 .mosaic-card h3{color:#7650c7;margin-bottom:7px}
 @media(max-width:1000px){.subject-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mosaic{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.subject-grid,.mosaic{grid-template-columns:1fr}}
+
+.feature-image img{
+  width:100%;height:340px;object-fit:cover;border-radius:26px;
+  box-shadow:0 12px 28px rgba(0,0,0,.09)
+}
+.home-three{
+  display:grid;grid-template-columns:1fr .9fr 1fr;gap:22px;align-items:stretch
+}
+.home-three .panel{height:100%}
+.home-three img{
+  width:100%;height:100%;min-height:260px;object-fit:cover;border-radius:24px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08)
+}
+@media(max-width:1000px){.home-three{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -96,7 +111,7 @@
 <div class="home-pill">🧠 Learning Support</div>
 </div>
 </div>
-<div><img src="images/study3.png?v=2" alt="Small group tutoring at The StudyBase"></div>
+<div><img src="images/home-hero.png" alt="Small group tutoring at The StudyBase"></div>
 </section>
 
 <section class="page-section">
@@ -140,17 +155,20 @@
 
 <section class="page-section soft">
 <div class="split">
+<div class="feature-image">
+<img src="images/home-support.png" alt="Learner studying with colourful notes and flashcards">
+</div>
 <div class="panel">
 <h2>Every Learner Learns Differently 💜</h2>
 <p>Some learners need another explanation. Some need more time. Some need structure, confidence, repetition or a quieter space to work.</p>
 <p>We adapt our approach to the learner rather than expecting the learner to fit one fixed approach.</p>
 <a href="services.html" class="button">Explore Our Support</a>
 </div>
-<div class="mosaic">
-<div class="mosaic-card big"><span class="icon">💜</span><h3>Patient Support</h3><p>Questions are welcome. Mistakes are part of learning.</p></div>
-<div class="mosaic-card"><span class="icon">🧠</span><h3>Different Explanations</h3><p>We keep looking for what makes it click.</p></div>
-<div class="mosaic-card"><span class="icon">🌱</span><h3>Progress At Their Pace</h3><p>Small steps matter too.</p></div>
 </div>
+<div class="grid-3" style="margin-top:22px">
+<div class="soft-card"><span class="icon">💜</span><h3>Patient Support</h3><p>Questions are welcome. Mistakes are part of learning.</p></div>
+<div class="soft-card"><span class="icon">🧠</span><h3>Different Explanations</h3><p>We keep looking for what makes it click.</p></div>
+<div class="soft-card"><span class="icon">🌱</span><h3>Progress At Their Pace</h3><p>Small steps matter too.</p></div>
 </div>
 </section>
 
@@ -165,11 +183,14 @@
 </section>
 
 <section class="page-section soft">
-<div class="split">
+<div class="home-three">
 <div class="panel">
 <h2>Two Friends. One Shared Dream.</h2>
 <p>The StudyBase was created by two lifelong friends with very different academic strengths but the same goal: helping learners feel capable, supported and confident.</p>
 <a href="about.html" class="button">Meet Mrs C &amp; Mrs T</a>
+</div>
+<div>
+<img src="images/home-desk.png" alt="Pastel StudyBase study desk">
 </div>
 <div class="panel">
 <h2>Ready To Get Started?</h2>
