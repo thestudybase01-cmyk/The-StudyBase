@@ -1,362 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services | The StudyBase</title>
-
-<meta name="description" content="Personalised tutoring, exam preparation, homework support, study skills and learning support for Grades 4–12 at The StudyBase in Northmead, Benoni.">
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
+<meta name="description" content="Personalised tutoring, exam preparation, homework support and study skills for Grades 4–12 at The StudyBase.">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
-
-/* ==========================
-   SERVICES PAGE - FULL LAYOUT
-========================== */
-
-.services-page-hero{
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
-    align-items:center;
-    gap:45px;
-    padding:55px 8%;
-    background:linear-gradient(135deg,#fff1f8,#eef8ff,#f6efff);
+*{box-sizing:border-box}
+.page-hero{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;
+  padding:46px 8%;background:linear-gradient(135deg,#fff1f8,#eef8ff,#f6efff)
 }
-
-.services-page-hero h2{
-    font-size:54px;
-    line-height:1.15;
-    margin-bottom:18px;
-}
-
-.services-page-hero h2 span{
-    color:#7650c7;
-}
-
-.services-page-hero p{
-    font-size:19px;
-    max-width:720px;
-}
-
-.services-page-hero img{
-    width:100%;
-    max-height:360px;
-    object-fit:cover;
-    border-radius:30px;
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-}
-
-.services-intro{
-    display:grid;
-    grid-template-columns:.9fr 1.1fr;
-    align-items:center;
-    gap:45px;
-    padding:50px 8%;
-    background:white;
-}
-
-.services-intro img{
-    width:100%;
-    height:330px;
-    object-fit:cover;
-    border-radius:30px;
-    box-shadow:0 15px 35px rgba(0,0,0,.10);
-}
-
-.services-intro h2{
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-.services-intro p{
-    font-size:18px;
-    margin-bottom:16px;
-}
-
-.service-options{
-    padding:50px 8%;
-}
-
-.service-options h2{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:30px;
-}
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:25px;
-}
-
-.service-box{
-    background:white;
-    border-radius:26px;
-    padding:30px;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-    border-top:6px solid #c9b6e4;
-    height:100%;
-}
-
-.service-box h3{
-    color:#7650c7;
-    font-size:24px;
-    margin-bottom:8px;
-}
-
-.service-box h4{
-    color:#d47bb5;
-    font-size:19px;
-    margin-bottom:14px;
-}
-
-.service-box p{
-    margin-bottom:12px;
-}
-
-.service-box p:last-child{
-    margin-bottom:0;
-}
-
-.services-visual-strip{
-    padding:45px 8%;
-    background:linear-gradient(135deg,#f8f1ff,#eef8ff);
-}
-
-.services-visual-strip h2{
-    text-align:center;
-    font-size:38px;
-    margin-bottom:12px;
-}
-
-.services-visual-strip > p{
-    text-align:center;
-    max-width:820px;
-    margin:0 auto 28px;
-    font-size:18px;
-}
-
-.services-image-row{
-    display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:24px;
-}
-
-.services-image-row img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:25px;
-    box-shadow:0 12px 28px rgba(0,0,0,.10);
-}
-
-.services-why{
-    padding:50px 8%;
-    background:white;
-}
-
-.services-why h2{
-    text-align:center;
-    font-size:40px;
-    margin-bottom:30px;
-}
-
-.services-why-grid{
-    display:grid;
-    grid-template-columns:repeat(4,minmax(0,1fr));
-    gap:22px;
-}
-
-.why-box{
-    text-align:center;
-    background:linear-gradient(135deg,#fff7fb,#f3f9ff);
-    padding:28px 22px;
-    border-radius:24px;
-    box-shadow:0 10px 25px rgba(0,0,0,.07);
-}
-
-.why-box .icon{
-    font-size:34px;
-    display:block;
-    margin-bottom:10px;
-}
-
-.why-box h3{
-    color:#7650c7;
-    font-size:21px;
-    margin-bottom:10px;
-}
-
-.learner-support{
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    align-items:center;
-    gap:45px;
-    padding:50px 8%;
-}
-
-.learner-support h2{
-    font-size:40px;
-    margin-bottom:16px;
-}
-
-.learner-support p{
-    font-size:18px;
-    margin-bottom:14px;
-}
-
-.learner-support img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-    border-radius:30px;
-    box-shadow:0 15px 35px rgba(0,0,0,.10);
-}
-
-.services-contact{
-    padding:45px 8%;
-    text-align:center;
-    background:linear-gradient(135deg,#7650c7,#d47bb5);
-    color:white;
-}
-
-.services-contact h2{
-    color:white;
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-.services-contact p{
-    margin:8px 0;
-    font-size:17px;
-}
-
-.services-contact strong{
-    color:white;
-}
-
-.services-contact a.contact-link{
-    color:white;
-    text-decoration:none;
-    font-weight:800;
-}
-
-.services-contact .button{
-    margin-top:18px;
-}
-
+.page-hero h2{font-size:52px;line-height:1.1;margin:10px 0 15px}
+.page-hero h2 span{color:#7650c7}
+.page-hero p{font-size:18px;max-width:700px}
+.page-hero img{width:100%;height:320px;object-fit:cover;border-radius:28px;box-shadow:0 14px 32px rgba(0,0,0,.11)}
+.page-section{padding:42px 8%}
+.page-section.soft{background:linear-gradient(135deg,#f8f1ff,#eef8ff)}
+.section-title{text-align:center;font-size:40px;margin-bottom:9px}
+.section-intro{text-align:center;max-width:830px;margin:0 auto 25px;font-size:17px}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.soft-card{background:white;padding:24px 20px;border-radius:22px;box-shadow:0 9px 22px rgba(0,0,0,.06)}
+.soft-card h3{color:#7650c7;margin-bottom:7px}
+.icon{display:block;font-size:30px;margin-bottom:7px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.panel{padding:28px;border-radius:24px;background:linear-gradient(135deg,#fffafd,#f8fbff);box-shadow:0 10px 25px rgba(0,0,0,.07)}
+.panel h2{font-size:36px;margin-bottom:12px}
+.panel p{font-size:17px;margin-bottom:11px}
+.final-cta{padding:40px 8%;text-align:center;background:linear-gradient(135deg,#7650c7,#d47bb5);color:white}
+.final-cta h2{color:white;font-size:38px;margin-bottom:10px}
+.final-cta p{margin:7px 0;font-size:17px}
+.final-cta a.contact-link{color:white;text-decoration:none;font-weight:800}
 @media(max-width:1000px){
-
-    .services-page-hero,
-    .services-intro,
-    .learner-support{
-        grid-template-columns:1fr;
-    }
-
-    .services-page-hero{
-        text-align:center;
-    }
-
-    .services-page-hero p{
-        margin:auto;
-    }
-
-    .service-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-    }
-
-    .services-why-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-    }
-
-    .services-image-row{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-    }
-
-    .services-image-row img:last-child{
-        grid-column:1 / -1;
-        height:300px;
-    }
-
+  .page-hero,.split{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-
 @media(max-width:650px){
-
-    .services-page-hero,
-    .services-intro,
-    .service-options,
-    .services-visual-strip,
-    .services-why,
-    .learner-support,
-    .services-contact{
-        padding:35px 5%;
-    }
-
-    .services-page-hero h2{
-        font-size:38px;
-    }
-
-    .services-intro h2,
-    .service-options h2,
-    .services-visual-strip h2,
-    .services-why h2,
-    .learner-support h2,
-    .services-contact h2{
-        font-size:32px;
-    }
-
-    .service-grid,
-    .services-why-grid,
-    .services-image-row{
-        grid-template-columns:1fr;
-    }
-
-    .services-image-row img:last-child{
-        grid-column:auto;
-        height:250px;
-    }
-
-    .services-page-hero img,
-    .services-intro img,
-    .learner-support img{
-        height:260px;
-    }
-
+  .page-hero,.page-section,.final-cta{padding:32px 5%}
+  .page-hero h2{font-size:39px}
+  .section-title,.panel h2,.final-cta h2{font-size:30px}
+  .grid-4,.grid-3,.grid-2{grid-template-columns:1fr}
+  .page-hero img{height:240px}
 }
-
 </style>
-
 </head>
-
-
 <body>
-
-
 <header>
-
 <div class="logo-area">
-
 <img src="images/logo.png" alt="The StudyBase Logo">
-
-<div>
-<h1>The StudyBase</h1>
-<p>Study here. Succeed everywhere.</p>
+<div><h1>The StudyBase</h1><p>Study here. Succeed everywhere.</p></div>
 </div>
-
-</div>
-
-
 <nav>
-
 <ul>
-
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="services.html">Services</a></li>
@@ -364,342 +62,51 @@
 <li><a href="register.html">Register</a></li>
 <li><a href="contact.html">Contact</a></li>
 <li><a href="faq.html">FAQ</a></li>
-
 </ul>
-
 </nav>
-
 </header>
-
-
-<!-- SERVICES HERO -->
-
-<section class="services-page-hero">
-
-<div>
-
-<p class="welcome">HOW WE CAN HELP</p>
-
-<h2>
-Support that meets learners <span>where they are.</span>
-</h2>
-
-<p>
-Supporting learners from <strong>Grade 4–12</strong> with personalised tutoring, confidence building, academic guidance and practical study support.
-</p>
-
-<div>
-<a href="register.html" class="button">Register Your Learner</a>
-<a href="contact.html" class="button secondary">Contact Us</a>
-</div>
-
-</div>
-
-<div>
-<img src="images/study1.png" alt="Personalised tutoring support at The StudyBase">
-</div>
-
+<section class="page-hero">
+<div><p class="welcome">HOW WE CAN HELP</p><h2>Support that meets learners <span>where they are.</span></h2>
+<p>Personalised tutoring, confidence building, exam preparation and practical study support for Grade 4–12 learners.</p>
+<a href="register.html" class="button">Register Your Learner</a></div>
+<div><img src="images/study1.png" alt="Individual tutoring support"></div>
 </section>
 
-
-<!-- INTRO -->
-
-<section class="services-intro">
-
-<div>
-<img src="images/study2.png" alt="Organised study desk with books and stationery">
+<section class="page-section">
+<h2 class="section-title">Tutoring Options</h2>
+<p class="section-intro">Six ways we can support learners without repeating the same visual content.</p>
+<div class="grid-3">
+<div class="soft-card"><h3>📚 Individual Tutoring</h3><p><strong>R300 / hour</strong></p><p>Focused one-on-one support.</p></div>
+<div class="soft-card"><h3>👥 Small Group Tutoring</h3><p><strong>R250 / learner / hour</strong></p><p>Two learners with personal guidance.</p></div>
+<div class="soft-card"><h3>🎯 Exam Preparation</h3><p>Revision, practice and exam techniques.</p></div>
+<div class="soft-card"><h3>🏠 Homework Support</h3><p>Help with assignments, homework and difficult concepts.</p></div>
+<div class="soft-card"><h3>🧠 Study Skills</h3><p>Organisation, planning, note-taking and time management.</p></div>
+<div class="soft-card"><h3>💜 Learning Support</h3><p>Patient, individualised support for different learning needs.</p></div>
 </div>
-
-<div>
-
-<h2>More Than Just Tutoring 💙</h2>
-
-<p>
-At The StudyBase, we know that academic support looks different for every learner.
-</p>
-
-<p>
-Some learners need help understanding a difficult concept. Others need support with homework, exam preparation, organisation, concentration or simply rebuilding their confidence.
-</p>
-
-<p>
-That is why our support is designed to be <strong>personal, practical and encouraging</strong> — so learners can develop both the academic skills and the confidence they need to keep moving forward.
-</p>
-
-</div>
-
 </section>
 
-
-<!-- TUTORING OPTIONS -->
-
-<section class="service-options">
-
-<h2>Tutoring Options</h2>
-
-<div class="service-grid">
-
-<div class="service-box">
-
-<h3>📚 Individual Tutoring</h3>
-
-<h4>R300 / hour</h4>
-
-<p>
-One-on-one lessons designed around each learner's individual needs, strengths and areas for improvement.
-</p>
-
-<p>
-Learners receive focused attention and personalised guidance to help them achieve their academic goals.
-</p>
-
+<section class="page-section soft">
+<h2 class="section-title">Why Choose The StudyBase?</h2>
+<div class="grid-4">
+<div class="soft-card"><span class="icon">📖</span><h3>Personalised Learning</h3><p>Lessons adapt to the learner.</p></div>
+<div class="soft-card"><span class="icon">🌱</span><h3>Confidence Building</h3><p>Questions are welcomed and encouraged.</p></div>
+<div class="soft-card"><span class="icon">⭐</span><h3>Supportive Environment</h3><p>A calm place to learn and grow.</p></div>
+<div class="soft-card"><span class="icon">📈</span><h3>Progress Focused</h3><p>Meaningful improvement over time.</p></div>
 </div>
-
-
-<div class="service-box">
-
-<h3>👥 Small Group Tutoring</h3>
-
-<h4>R250 / learner / hour</h4>
-
-<p>
-Small groups of two learners provide the opportunity for collaboration while still receiving personal attention.
-</p>
-
-<p>
-A supportive environment where learners can ask questions, practise skills and grow together.
-</p>
-
-</div>
-
-
-<div class="service-box">
-
-<h3>🎯 Exam Preparation</h3>
-
-<h4>Grades 4–12</h4>
-
-<p>
-Helping learners prepare confidently for tests and examinations through revision, practice activities and effective study techniques.
-</p>
-
-</div>
-
-
-<div class="service-box">
-
-<h3>🏠 Homework Support</h3>
-
-<h4>Daily Academic Guidance</h4>
-
-<p>
-Assistance with homework, assignments and difficult concepts to help learners stay on track and develop independence.
-</p>
-
-</div>
-
-
-<div class="service-box">
-
-<h3>🧠 Study Skills Development</h3>
-
-<h4>Building Better Habits</h4>
-
-<p>
-Helping learners improve organisation, time management, note-taking, planning and effective learning strategies.
-</p>
-
-</div>
-
-
-<div class="service-box">
-
-<h3>💜 Learning Support</h3>
-
-<h4>Individualised Assistance</h4>
-
-<p>
-At The StudyBase, we understand that every learner learns differently.
-</p>
-
-<p>
-We provide patient and supportive tutoring for learners who may need additional guidance, including learners with ADHD, concentration challenges and other learning difficulties.
-</p>
-
-<p>
-Our approach focuses on adapting support, building confidence and helping each learner work towards success.
-</p>
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- VISUAL STRIP -->
-
-<section class="services-visual-strip">
-
-<h2>Learning Can Look Different for Everyone</h2>
-
-<p>
-Quiet individual support, working through a difficult problem, learning together or developing a better study routine — every step forward counts.
-</p>
-
-<div class="services-image-row">
-
-<img src="images/study3.png" alt="Small group tutoring session">
-
-<img src="images/study5.png" alt="Learner studying with a laptop">
-
-<img src="images/study6.png" alt="Books, stationery and study materials">
-
+<section class="page-section">
+<div class="split">
+<div class="panel"><h2>Supporting Every Learner</h2><p>Every learner has unique strengths, challenges and learning styles.</p><p>We focus on understanding, confidence and practical learning habits rather than expecting everyone to learn in exactly the same way.</p></div>
+<div class="panel"><h2>What Support Can Include</h2><p>✔ Explaining difficult concepts differently</p><p>✔ Breaking work into manageable steps</p><p>✔ Developing study routines</p><p>✔ Building confidence before tests</p><p>✔ Improving focus and organisation</p></div>
 </div>
-
 </section>
 
-
-<!-- WHY CHOOSE US -->
-
-<section class="services-why">
-
-<h2>Why Choose The StudyBase?</h2>
-
-<div class="services-why-grid">
-
-<div class="why-box">
-
-<span class="icon">📖</span>
-
-<h3>Personalised Learning</h3>
-
-<p>
-Lessons are adapted to meet each learner's individual needs and learning style.
-</p>
-
-</div>
-
-
-<div class="why-box">
-
-<span class="icon">🌱</span>
-
-<h3>Confidence Building</h3>
-
-<p>
-We create a positive environment where learners feel comfortable asking questions and growing.
-</p>
-
-</div>
-
-
-<div class="why-box">
-
-<span class="icon">⭐</span>
-
-<h3>Supportive Environment</h3>
-
-<p>
-A caring space where learners are encouraged to improve and believe in themselves.
-</p>
-
-</div>
-
-
-<div class="why-box">
-
-<span class="icon">📈</span>
-
-<h3>Progress Focused</h3>
-
-<p>
-Our goal is meaningful improvement and long-term academic success.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SUPPORTING EVERY LEARNER -->
-
-<section class="learner-support">
-
-<div>
-
-<h2>Supporting Every Learner</h2>
-
-<p>
-We believe every learner has unique strengths and abilities.
-</p>
-
-<p>
-At The StudyBase, we focus on creating a supportive learning environment where students can work at their own pace, develop effective study strategies and gain confidence.
-</p>
-
-<p>
-Whether a learner needs help understanding concepts, improving focus, preparing for exams or developing stronger learning habits, we are here to provide guidance and encouragement.
-</p>
-
-</div>
-
-<div>
-<img src="images/study4.png" alt="Welcoming and supportive StudyBase learning space">
-</div>
-
-</section>
-
-
-<!-- CONTACT CTA -->
-
-<section class="services-contact">
-
-<h2>Ready To Help Your Child Succeed?</h2>
-
-<p>📍 Northmead, Benoni</p>
-
-<p>🎓 Grades 4–12</p>
-
-<p>
-📞
-<a class="contact-link" href="tel:+27844119944">084 411 9944</a>
-&nbsp; | &nbsp;
-<a class="contact-link" href="tel:+27761392011">076 139 2011</a>
-</p>
-
-<p>
-📧
-<a class="contact-link" href="mailto:TheStudyBase01@gmail.com">TheStudyBase01@gmail.com</a>
-</p>
-
-<a href="register.html" class="button">
-Register Now
-</a>
-
-</section>
-
-
+<section class="final-cta"><h2>Ready To Get Started?</h2><p>📍 Northmead, Benoni | Grades 4–12</p><p>📞 <a class="contact-link" href="tel:+27844119944">084 411 9944</a> | <a class="contact-link" href="tel:+27761392011">076 139 2011</a></p><a href="register.html" class="button">Register Now</a></section>
 <footer>
-
 <h3>The StudyBase</h3>
-
-<p>
-Study here. Succeed everywhere.
-</p>
-
-<p>
-© 2026 The StudyBase. All Rights Reserved.
-</p>
-
+<p>Study here. Succeed everywhere.</p>
+<p>© 2026 The StudyBase. All Rights Reserved.</p>
 </footer>
-
-
 <script src="js/script.js"></script>
-
-
-</body>
-
-</html>
+</body></html>
