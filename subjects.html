@@ -8,10 +8,335 @@
 
 <title>Subjects | The StudyBase</title>
 
+<meta name="description" content="Academic support for Grade 4–12 learners across Mathematics, Languages, Sciences, Business subjects, Humanities and more at The StudyBase in Northmead, Benoni.">
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ==========================
+   SUBJECTS PAGE - FULL LAYOUT
+========================== */
+
+.subjects-page-hero{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    align-items:center;
+    gap:45px;
+    padding:55px 8%;
+    background:linear-gradient(135deg,#fff1f8,#eef8ff,#f6efff);
+}
+
+.subjects-page-hero h2{
+    font-size:54px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.subjects-page-hero h2 span{
+    color:#7650c7;
+}
+
+.subjects-page-hero p{
+    font-size:19px;
+    max-width:720px;
+}
+
+.subjects-page-hero img{
+    width:100%;
+    max-height:360px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.subjects-intro{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    align-items:center;
+    gap:45px;
+    padding:50px 8%;
+    background:white;
+}
+
+.subjects-intro img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+
+.subjects-intro h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.subjects-intro p{
+    font-size:18px;
+    margin-bottom:14px;
+}
+
+.subjects-list{
+    padding:50px 8%;
+}
+
+.subjects-list h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.subjects-list > p{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 30px;
+    font-size:18px;
+}
+
+.subject-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:24px;
+}
+
+.subject-box{
+    background:white;
+    border-radius:26px;
+    padding:28px 24px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    border-top:6px solid #c9b6e4;
+    height:100%;
+}
+
+.subject-box h3{
+    color:#7650c7;
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.subject-box p{
+    margin:0;
+}
+
+.subjects-visual-strip{
+    padding:45px 8%;
+    background:linear-gradient(135deg,#f8f1ff,#eef8ff);
+}
+
+.subjects-visual-strip h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.subjects-visual-strip > p{
+    text-align:center;
+    max-width:830px;
+    margin:0 auto 28px;
+    font-size:18px;
+}
+
+.subjects-image-row{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:24px;
+}
+
+.subjects-image-row img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 12px 28px rgba(0,0,0,.10);
+}
+
+.different-learner{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:45px;
+    padding:50px 8%;
+    background:white;
+}
+
+.different-learner h2{
+    font-size:40px;
+    margin-bottom:16px;
+}
+
+.different-learner p{
+    font-size:18px;
+    margin-bottom:14px;
+}
+
+.different-learner img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+
+.subjects-highlights{
+    padding:50px 8%;
+}
+
+.subjects-highlights h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.subjects-highlights-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:22px;
+}
+
+.highlight-box{
+    text-align:center;
+    background:linear-gradient(135deg,#fff7fb,#f3f9ff);
+    padding:28px 22px;
+    border-radius:24px;
+    box-shadow:0 10px 25px rgba(0,0,0,.07);
+}
+
+.highlight-box .icon{
+    display:block;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.highlight-box h3{
+    color:#7650c7;
+    font-size:21px;
+    margin-bottom:10px;
+}
+
+.subjects-contact{
+    padding:45px 8%;
+    text-align:center;
+    background:linear-gradient(135deg,#7650c7,#d47bb5);
+    color:white;
+}
+
+.subjects-contact h2{
+    color:white;
+    font-size:40px;
+    margin-bottom:14px;
+}
+
+.subjects-contact p{
+    margin:8px 0;
+    font-size:17px;
+}
+
+.subjects-contact a.contact-link{
+    color:white;
+    font-weight:800;
+    text-decoration:none;
+}
+
+.subjects-contact .button{
+    margin-top:18px;
+}
+
+@media(max-width:1100px){
+
+    .subject-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+    }
+
+}
+
+@media(max-width:1000px){
+
+    .subjects-page-hero,
+    .subjects-intro,
+    .different-learner{
+        grid-template-columns:1fr;
+    }
+
+    .subjects-page-hero{
+        text-align:center;
+    }
+
+    .subjects-page-hero p{
+        margin:auto;
+    }
+
+    .subjects-highlights-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .subjects-image-row{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .subjects-image-row img:last-child{
+        grid-column:1 / -1;
+        height:300px;
+    }
+
+}
+
+@media(max-width:800px){
+
+    .subject-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+}
+
+@media(max-width:650px){
+
+    .subjects-page-hero,
+    .subjects-intro,
+    .subjects-list,
+    .subjects-visual-strip,
+    .different-learner,
+    .subjects-highlights,
+    .subjects-contact{
+        padding:35px 5%;
+    }
+
+    .subjects-page-hero h2{
+        font-size:38px;
+    }
+
+    .subjects-intro h2,
+    .subjects-list h2,
+    .subjects-visual-strip h2,
+    .different-learner h2,
+    .subjects-highlights h2,
+    .subjects-contact h2{
+        font-size:32px;
+    }
+
+    .subject-grid,
+    .subjects-highlights-grid,
+    .subjects-image-row{
+        grid-template-columns:1fr;
+    }
+
+    .subjects-image-row img:last-child{
+        grid-column:auto;
+        height:250px;
+    }
+
+    .subjects-page-hero img,
+    .subjects-intro img,
+    .different-learner img{
+        height:260px;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -36,7 +361,6 @@
 </div>
 
 
-
 <nav>
 
 <ul>
@@ -47,6 +371,7 @@
 <li><a href="subjects.html">Subjects</a></li>
 <li><a href="register.html">Register</a></li>
 <li><a href="contact.html">Contact</a></li>
+<li><a href="faq.html">FAQ</a></li>
 
 </ul>
 
@@ -55,20 +380,65 @@
 </header>
 
 
+<!-- SUBJECTS HERO -->
 
+<section class="subjects-page-hero">
 
+<div>
 
-
-<section class="hero">
-
-<div class="hero-content">
+<p class="welcome">SUBJECT SUPPORT</p>
 
 <h2>
-Subjects We <span>Support</span>
+Helping learners feel more confident across <span>every subject.</span>
 </h2>
 
 <p>
-Quality academic support for learners from Grade 4–12 across a range of subjects.
+Quality academic support for learners from <strong>Grade 4–12</strong> across a wide range of subjects, with patient guidance and practical learning strategies.
+</p>
+
+<div>
+
+<a href="register.html" class="button">Register Your Learner</a>
+
+<a href="contact.html" class="button secondary">Ask About A Subject</a>
+
+</div>
+
+</div>
+
+<div>
+
+<img src="images/study3.png" alt="Learners working together during a tutoring session">
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="subjects-intro">
+
+<div>
+
+<img src="images/study2.png" alt="Books and stationery for organised studying">
+
+</div>
+
+<div>
+
+<h2>Strong Foundations. Better Confidence. 📚</h2>
+
+<p>
+Every subject comes with its own challenges, and every learner experiences those challenges differently.
+</p>
+
+<p>
+Our goal is not simply to help learners complete the work. We want them to <strong>understand what they are doing, know how to approach it and feel more confident doing it independently</strong>.
+</p>
+
+<p>
+From languages and Mathematics to Sciences, Business subjects and Humanities, we provide support that meets learners where they are.
 </p>
 
 </div>
@@ -76,164 +446,141 @@ Quality academic support for learners from Grade 4–12 across a range of subjec
 </section>
 
 
+<!-- SUBJECT GRID -->
 
-
-
-
-<section class="services">
-
+<section class="subjects-list">
 
 <h2>Grade 4–12 Subjects</h2>
 
+<p>
+Our support covers a broad range of school subjects. The exact approach is adapted according to the learner's grade, current level and academic goals.
+</p>
 
-<div class="cards">
+<div class="subject-grid">
 
 
+<div class="subject-box">
 
-<div class="card">
-
-<h3>📐 Mathematics and mathematical literacy</h3>
+<h3>📐 Mathematics &amp; Mathematical Literacy</h3>
 
 <p>
-Building understanding, problem-solving skills, and confidence in Mathematics.
+Building understanding, problem-solving skills and confidence in calculations and mathematical concepts.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>📖 English</h3>
 
 <p>
-Support with comprehension, writing skills, grammar, literature, and language development.
+Support with comprehension, writing skills, grammar, literature and language development.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>🇿🇦 Afrikaans</h3>
 
 <p>
-Helping learners improve vocabulary, grammar, comprehension, and communication skills.
+Helping learners improve vocabulary, grammar, comprehension, writing and communication skills.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>🔬 Natural Sciences</h3>
 
 <p>
-Helping learners understand scientific concepts and apply their knowledge.
+Helping learners understand scientific concepts and apply their knowledge with confidence.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>⚗️ Physical Sciences</h3>
 
 <p>
-Support with Physics and Chemistry concepts, calculations, and exam preparation.
+Support with Physics and Chemistry concepts, calculations and examination preparation.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>🧬 Life Sciences</h3>
 
 <p>
-Assistance with biological concepts, terminology, and assessment preparation.
+Assistance with biological concepts, terminology, diagrams and assessment preparation.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>💼 Accounting</h3>
 
 <p>
-Developing understanding of accounting principles, calculations, and applications.
+Developing understanding of accounting principles, calculations and practical applications.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>📊 Business Studies</h3>
 
 <p>
-Support with business concepts, theory, case studies, and exam techniques.
+Support with business concepts, theory, case studies and effective exam techniques.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>🌍 Geography</h3>
 
 <p>
-Helping learners understand physical and human geography concepts.
+Helping learners understand physical and human geography concepts, maps and application questions.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>📜 History</h3>
 
 <p>
-Improving research skills, understanding historical events, and exam preparation.
+Improving content understanding, source-based skills, essay writing and exam preparation.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>💰 Economics</h3>
 
 <p>
-Support with economic concepts, graphs, theory, and application questions.
+Support with economic concepts, graphs, theory and application questions.
 </p>
 
 </div>
 
 
-
-
-<div class="card">
+<div class="subject-box">
 
 <h3>📘 EMS</h3>
 
@@ -244,81 +591,157 @@ Helping younger learners build strong foundations in Economic and Management Sci
 </div>
 
 
-
 </div>
-
 
 </section>
 
 
+<!-- VISUAL STRIP -->
 
+<section class="subjects-visual-strip">
 
-
-
-
-<section class="why">
-
-
-<h2>Every Learner Is Different</h2>
-
-
-<div class="quote">
-
+<h2>Different Subjects. Different Ways Of Learning.</h2>
 
 <p>
-
-At The StudyBase, we understand that every learner has different strengths and challenges. Our tutors focus on building understanding, confidence, and effective learning habits.
-
+Sometimes a learner needs to see it, write it, practise it, talk through it or simply approach it in a different way.
 </p>
 
+<div class="subjects-image-row">
+
+<img src="images/study1.png" alt="Individual tutoring support">
+
+<img src="images/study5.png" alt="Learner using a laptop during study time">
+
+<img src="images/study6.png" alt="Books, notes and stationery for effective studying">
 
 </div>
-
 
 </section>
 
 
+<!-- EVERY LEARNER -->
 
+<section class="different-learner">
 
+<div>
 
-
-
-<section class="contact">
-
-
-<h2>
-Need Support With Another Subject?
-</h2>
-
+<h2>Every Learner Is Different 💙</h2>
 
 <p>
-Contact us and we will discuss how we can help your learner succeed.
+At The StudyBase, we understand that every learner has different strengths, challenges and ways of processing information.
 </p>
-
 
 <p>
-📍 Northmead, Benoni
+Our tutors focus on building <strong>understanding, confidence and effective learning habits</strong> rather than expecting every learner to approach a subject in exactly the same way.
 </p>
-
 
 <p>
-📞 078 018 4741 | 076 139 2011
+If a learner is struggling, we look for another way to explain it, practise it or break it down into smaller steps.
 </p>
 
+</div>
+
+<div>
+
+<img src="images/study4.png" alt="Warm and welcoming StudyBase learning environment">
+
+</div>
+
+</section>
+
+
+<!-- HIGHLIGHTS -->
+
+<section class="subjects-highlights">
+
+<h2>What We Focus On</h2>
+
+<div class="subjects-highlights-grid">
+
+
+<div class="highlight-box">
+
+<span class="icon">🧠</span>
+
+<h3>Understanding</h3>
+
+<p>
+Helping learners understand the reason behind the answer, not only memorise it.
+</p>
+
+</div>
+
+
+<div class="highlight-box">
+
+<span class="icon">✍️</span>
+
+<h3>Practice</h3>
+
+<p>
+Working through questions and examples so learners can apply what they know.
+</p>
+
+</div>
+
+
+<div class="highlight-box">
+
+<span class="icon">🌱</span>
+
+<h3>Confidence</h3>
+
+<p>
+Creating a space where learners can ask questions without feeling embarrassed or overwhelmed.
+</p>
+
+</div>
+
+
+<div class="highlight-box">
+
+<span class="icon">🎯</span>
+
+<h3>Progress</h3>
+
+<p>
+Building skills step by step and celebrating improvement along the way.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CONTACT CTA -->
+
+<section class="subjects-contact">
+
+<h2>Need Support With A Subject?</h2>
+
+<p>
+Contact us and we will discuss how we can support your learner.
+</p>
+
+<p>📍 Northmead, Benoni</p>
+
+<p>🎓 Grades 4–12</p>
+
+<p>
+📞
+<a class="contact-link" href="tel:+27844119944">084 411 9944</a>
+&nbsp; | &nbsp;
+<a class="contact-link" href="tel:+27761392011">076 139 2011</a>
+</p>
 
 <a href="contact.html" class="button">
-
 Contact Us
-
 </a>
 
-
 </section>
-
-
-
-
-
 
 
 <footer>
@@ -329,15 +752,11 @@ Contact Us
 Study here. Succeed everywhere.
 </p>
 
-
 <p>
 © 2026 The StudyBase. All Rights Reserved.
 </p>
 
-
 </footer>
-
-
 
 
 <script src="js/script.js"></script>
