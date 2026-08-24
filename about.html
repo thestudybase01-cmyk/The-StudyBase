@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | The StudyBase</title>
-<meta name="description" content="Meet the two lifelong friends behind The StudyBase in Northmead, Benoni.">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | The StudyBase</title>
+<meta name="description" content="Contact The StudyBase in Northmead, Benoni for Grade 4–12 tutoring support.">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
 
 *{box-sizing:border-box}
@@ -50,14 +47,11 @@
   .page-hero img{height:240px}
 }
 
-.about-story{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.founder-wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.founder-card{background:white;padding:28px;border-radius:24px;box-shadow:0 10px 25px rgba(0,0,0,.07)}
-.founder-card h2{font-size:35px;margin-bottom:12px}
-.founder-card p{font-size:16.5px;margin-bottom:11px}
-.special{padding:20px;border-radius:18px;background:linear-gradient(135deg,#f8f1ff,#eef8ff);font-weight:800;text-align:center;line-height:1.7;margin:15px 0}
-.fact-box{padding:18px;border-radius:18px;background:linear-gradient(135deg,#fff5fb,#f3f9ff);margin-top:14px}
-@media(max-width:900px){.about-story,.founder-wrap{grid-template-columns:1fr}}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.contact-card{display:flex;flex-direction:column;justify-content:space-between;min-height:220px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.contact-actions .button{margin:0}
+@media(max-width:700px){.contact-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -78,115 +72,41 @@
 </ul>
 </nav>
 </header>
-
 <section class="page-hero">
-<div>
-<p class="welcome">THE PEOPLE BEHIND THE STUDYBASE</p>
-<h2>Two friends. One shared dream. <span>A whole lot of heart.</span></h2>
-<p>Our story started when we were six years old — and after years of growing, learning, building careers and walking through life together, it somehow led us here.</p>
-<a href="register.html" class="button">Join The StudyBase</a>
-</div>
-<div><img src="images/study4.png" alt="Warm and welcoming StudyBase learning space"></div>
+<div><p class="welcome">GET IN TOUCH</p><h2>Contact <span>The StudyBase</span></h2><p>Questions about tutoring, subjects, availability or your learner's individual needs? We would love to hear from you.</p><a href="register.html" class="button">Register Your Learner</a><a href="https://wa.me/27844119944" class="button secondary" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></div>
+<div><img src="images/study2.png" alt="Organised study desk with books and stationery"></div>
 </section>
 
 <section class="page-section">
-<div class="about-story">
-<div class="panel">
-<h2>A little more about us...</h2>
-<p><strong>Two friends. One shared dream. 💙</strong></p>
-<p>Our story started when we were just <strong>six years old</strong>.</p>
-<p>Since then, we have grown up together, followed completely different academic paths, built careers, got married, started families, faced some incredibly difficult seasons and celebrated some beautiful ones too.</p>
-<p>Through all of it, somehow our paths kept leading us back to one another.</p>
-<p>And eventually, they led us here.</p>
-<p><strong><em>To The StudyBase.</em></strong></p>
-</div>
-<div class="panel">
-<h2>Built With Love 💙</h2>
-<p>This dream may belong to the two of us, but we definitely haven't built it alone.</p>
-<p>Our husbands have supported us through the ideas, planning, late nights, stress, excitement and probably more StudyBase conversations than they ever expected! 😄</p>
-<p>Our families have stood beside us too — encouraging us, believing in us and supporting this dream every step of the way.</p>
-<p><strong>The StudyBase really is something built with a whole lot of love behind it.</strong></p>
-</div>
+<h2 class="section-title">Get In Touch</h2>
+<div class="contact-grid">
+<div class="soft-card contact-card"><div><h3>📍 Visit Us</h3><p><strong>Northmead, Benoni, Gauteng</strong></p><p>Tutoring sessions are arranged by appointment.</p></div><div class="contact-actions"><a href="register.html" class="button">Register</a></div></div>
+<div class="soft-card contact-card"><div><h3>📞 Call Us</h3><p><strong>084 411 9944</strong></p><p><strong>076 139 2011</strong></p></div><div class="contact-actions"><a href="tel:+27844119944" class="button">Call 084</a><a href="tel:+27761392011" class="button secondary">Call 076</a></div></div>
+<div class="soft-card contact-card"><div><h3>💬 WhatsApp</h3><p>Send us a message and we will get back to you.</p></div><div class="contact-actions"><a href="https://wa.me/27844119944" class="button" target="_blank" rel="noopener noreferrer">WhatsApp 084</a><a href="https://wa.me/27761392011" class="button secondary" target="_blank" rel="noopener noreferrer">WhatsApp 076</a></div></div>
+<div class="soft-card contact-card"><div><h3>📧 Email</h3><p><strong>TheStudyBase01@gmail.com</strong></p><p>Perfect for longer questions or detailed learner information.</p></div><div class="contact-actions"><a href="mailto:TheStudyBase01@gmail.com" class="button">Send Email</a></div></div>
 </div>
 </section>
 
 <section class="page-section soft">
-<div class="founder-wrap">
-<div class="founder-card">
-<h2>Meet Mrs C 📚💙</h2>
-<p><strong>Hi! I'm Mrs C. 👋🏼</strong></p>
-<p>Teaching has always been where my heart is.</p>
-<p>I completed my <strong>Bachelor of Education degree, specialising in Educational Psychology</strong>, and I have now been a teacher for <strong>six years</strong>.</p>
-<p>During those years, I have worked with children with different personalities, strengths, struggles and ways of learning.</p>
-<p>One of the areas closest to my heart is working with children who have <strong>additional or special learning needs</strong>, including learners with <strong>ADHD, dyslexia, OCD and other learning challenges</strong>.</p>
-<p>I strongly believe that a child who learns differently should never be made to feel incapable.</p>
-<div class="special">How would I want someone to treat my own child?<br><br>With patience.<br>With kindness.<br>With understanding.<br>With encouragement.<br>And with someone who refuses to give up on them.</div>
-<p>That is exactly how I want every learner at The StudyBase to be treated.</p>
-<p>My strengths are <strong>languages, studying, organisation, planning and finding ways to make difficult work feel less overwhelming</strong>.</p>
-<div class="fact-box">
-<p>💙 I love blue.</p><p>🐶 I adore dogs.</p><p>🏊‍♀️ I love swimming.</p><p>✨ And I may be slightly obsessed with things being organised and in their proper place. 😉😂</p>
-</div>
-</div>
-
-<div class="founder-card">
-<h2>Meet Mrs T 🐴📚🏃‍♀️</h2>
-<p><strong>Hi! I'm Mrs T! 👋🏼</strong></p>
-<p>My academic journey has definitely been a long one. I spent <strong>seven years studying towards my degrees</strong>, eventually completing my <strong>Master's degree in Clinical &amp; Experimental Pharmacology</strong>. 🎓</p>
-<p>I've always loved learning, especially when I'm faced with something challenging. Give me a difficult topic and I'll happily dig deeper until it makes sense! 🧠✨</p>
-<p>I believe that <strong>hard work pays off</strong> and that something difficult does not mean something impossible.</p>
-<div class="fact-box">
-<p>🏃‍♀️ I'm training for long-distance running.</p>
-<p>🐴 I competed in show jumping — even with two broken shoulders along the way 😅.</p>
-<p>💪🏼 I love challenging myself and setting goals.</p>
-<p>🐶 I absolutely ADORE my dogs.</p>
-<p>❤️ I treasure spending time with my close friends and family.</p>
-</div>
-<p style="margin-top:14px;">I believe learning is about <strong>patience, persistence, hard work and having someone who believes in you along the way</strong>.</p>
-<p>That is something I want every learner I work with to feel.</p>
-<div class="special">“Something difficult does not mean something impossible.” 🧠✨</div>
-</div>
+<div class="split">
+<div class="panel"><h2>Our Learning Centre 💙</h2><p>A welcoming environment where learners can ask questions, build confidence and work towards academic success.</p><p>We want learners to feel comfortable making mistakes and trying again.</p></div>
+<div class="panel"><h2>Business Hours ⏰</h2><p><strong>Monday – Friday:</strong> 14:00 – 18:00</p><p><strong>Saturday:</strong> By appointment</p><p>Not sure where to start? Tell us the learner's grade and what they are struggling with.</p></div>
 </div>
 </section>
 
 <section class="page-section">
-<h2 class="section-title">Different strengths. The same heart and goal. 💙</h2>
-<p class="section-intro">We are quite different — and that is exactly why this works.</p>
-<div class="grid-4">
-<div class="soft-card"><span class="icon">📖</span><h3>Languages + Numbers</h3><p>Different academic strengths that complement each other.</p></div>
-<div class="soft-card"><span class="icon">🎨</span><h3>Creativity + Structure</h3><p>One starts the idea, the other helps shape the plan.</p></div>
-<div class="soft-card"><span class="icon">🎶</span><h3>Music</h3><p>There is almost always a song for the situation.</p></div>
-<div class="soft-card"><span class="icon">💙</span><h3>The Same Values</h3><p>Hard work, kindness, confidence and believing in every learner.</p></div>
+<div class="grid-3">
+<div class="soft-card"><span class="icon">💜</span><h3>Personal Support</h3><p>We take time to understand the learner.</p></div>
+<div class="soft-card"><span class="icon">📚</span><h3>Grades 4–12</h3><p>Support across a wide range of school subjects.</p></div>
+<div class="soft-card"><span class="icon">🌱</span><h3>Confidence First</h3><p>We want learners to leave believing they can do it.</p></div>
 </div>
 </section>
 
-<section class="page-section soft">
-<div class="panel">
-<h2>And so, The StudyBase was born...</h2>
-<p>The StudyBase was never meant to be just another tutoring centre.</p>
-<p>We wanted a place where learning goes <strong>beyond textbooks and test marks</strong>, where children are not expected to fit into one box, and where we meet learners where they are.</p>
-<div class="grid-3" style="margin-top:18px">
-<div class="soft-card">📈 An improved report</div>
-<div class="soft-card">➗ Finally understanding fractions</div>
-<div class="soft-card">📖 Reading without feeling afraid</div>
-<div class="soft-card">✍️ Remembering a spelling rule</div>
-<div class="soft-card">✅ Passing a difficult test</div>
-<div class="soft-card">💙 “I think I can do this.”</div>
-</div>
-<p style="margin-top:18px"><strong>We celebrate all of them. Because every little step matters.</strong></p>
-</div>
-</section>
-
-<section class="final-cta">
-<h2>Join The StudyBase Family 💙</h2>
-<p>Grades 4–12 | Northmead, Benoni</p>
-<p>📞 <a class="contact-link" href="tel:+27844119944">084 411 9944</a> &nbsp; | &nbsp; <a class="contact-link" href="tel:+27761392011">076 139 2011</a></p>
-<a href="register.html" class="button">Register Today</a>
-</section>
+<section class="final-cta"><h2>Ready To Get Started?</h2><p>📞 <a class="contact-link" href="tel:+27844119944">084 411 9944</a> | <a class="contact-link" href="tel:+27761392011">076 139 2011</a></p><p>📧 <a class="contact-link" href="mailto:TheStudyBase01@gmail.com">TheStudyBase01@gmail.com</a></p><a href="register.html" class="button">Register Your Learner</a></section>
 <footer>
 <h3>The StudyBase</h3>
 <p>Study here. Succeed everywhere.</p>
 <p>© 2026 The StudyBase. All Rights Reserved.</p>
 </footer>
 <script src="js/script.js"></script>
-</body>
-</html>
+</body></html>
