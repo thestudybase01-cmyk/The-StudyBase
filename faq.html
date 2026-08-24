@@ -1,322 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAQ | The StudyBase</title>
-
-<meta name="description" content="Frequently asked questions about The StudyBase tutoring services, subjects, fees, learning support and registration in Northmead, Benoni.">
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
+<meta name="description" content="Frequently asked questions about The StudyBase tutoring services, fees and learning support.">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
-
-/* ==========================
-   FAQ PAGE - FULL LAYOUT
-========================== */
-
-.faq-page-hero{
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    align-items:center;
-    gap:45px;
-    padding:55px 8%;
-    background:linear-gradient(135deg,#fff1f8,#eef8ff,#f6efff);
+*{box-sizing:border-box}
+.page-hero{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;
+  padding:46px 8%;background:linear-gradient(135deg,#fff1f8,#eef8ff,#f6efff)
 }
-
-.faq-page-hero h2{
-    font-size:54px;
-    line-height:1.15;
-    margin-bottom:18px;
+.page-hero h2{font-size:52px;line-height:1.1;margin:10px 0 15px}
+.page-hero h2 span{color:#7650c7}
+.page-hero p{font-size:18px;max-width:700px}
+.page-hero img{width:100%;height:320px;object-fit:cover;border-radius:28px;box-shadow:0 14px 32px rgba(0,0,0,.11)}
+.page-section{padding:42px 8%}
+.page-section.soft{background:linear-gradient(135deg,#f8f1ff,#eef8ff)}
+.section-title{text-align:center;font-size:40px;margin-bottom:9px}
+.section-intro{text-align:center;max-width:830px;margin:0 auto 25px;font-size:17px}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.soft-card{background:white;padding:24px 20px;border-radius:22px;box-shadow:0 9px 22px rgba(0,0,0,.06)}
+.soft-card h3{color:#7650c7;margin-bottom:7px}
+.icon{display:block;font-size:30px;margin-bottom:7px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.panel{padding:28px;border-radius:24px;background:linear-gradient(135deg,#fffafd,#f8fbff);box-shadow:0 10px 25px rgba(0,0,0,.07)}
+.panel h2{font-size:36px;margin-bottom:12px}
+.panel p{font-size:17px;margin-bottom:11px}
+.final-cta{padding:40px 8%;text-align:center;background:linear-gradient(135deg,#7650c7,#d47bb5);color:white}
+.final-cta h2{color:white;font-size:38px;margin-bottom:10px}
+.final-cta p{margin:7px 0;font-size:17px}
+.final-cta a.contact-link{color:white;text-decoration:none;font-weight:800}
+@media(max-width:1000px){
+  .page-hero,.split{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-
-.faq-page-hero h2 span{
-    color:#7650c7;
-}
-
-.faq-page-hero p{
-    font-size:19px;
-    max-width:720px;
-}
-
-.faq-page-hero img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-    border-radius:30px;
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-}
-
-.faq-intro{
-    display:grid;
-    grid-template-columns:.9fr 1.1fr;
-    align-items:center;
-    gap:45px;
-    padding:48px 8%;
-    background:white;
-}
-
-.faq-intro img{
-    width:100%;
-    height:310px;
-    object-fit:cover;
-    border-radius:28px;
-    box-shadow:0 14px 32px rgba(0,0,0,.10);
-}
-
-.faq-intro h2{
-    font-size:40px;
-    margin-bottom:14px;
-}
-
-.faq-intro p{
-    font-size:18px;
-    margin-bottom:14px;
-}
-
-.faq-section{
-    padding:50px 8%;
-}
-
-.faq-section h2{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:12px;
-}
-
-.faq-section > p{
-    text-align:center;
-    max-width:820px;
-    margin:0 auto 30px;
-    font-size:18px;
-}
-
-.faq-grid{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:24px;
-}
-
-.faq-card{
-    background:white;
-    border-radius:26px;
-    padding:28px;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-    border-top:6px solid #c9b6e4;
-    height:100%;
-}
-
-.faq-card h3{
-    color:#7650c7;
-    font-size:22px;
-    margin-bottom:12px;
-}
-
-.faq-card p{
-    margin-bottom:10px;
-}
-
-.faq-card p:last-child{
-    margin-bottom:0;
-}
-
-.faq-visual-strip{
-    padding:45px 8%;
-    background:linear-gradient(135deg,#f8f1ff,#eef8ff);
-}
-
-.faq-visual-strip h2{
-    text-align:center;
-    font-size:38px;
-    margin-bottom:12px;
-}
-
-.faq-visual-strip > p{
-    text-align:center;
-    max-width:820px;
-    margin:0 auto 28px;
-    font-size:18px;
-}
-
-.faq-image-grid{
-    display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:24px;
-}
-
-.faq-image-grid img{
-    width:100%;
-    height:240px;
-    object-fit:cover;
-    border-radius:24px;
-    box-shadow:0 12px 28px rgba(0,0,0,.10);
-}
-
-.faq-reassurance{
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    align-items:center;
-    gap:45px;
-    padding:50px 8%;
-    background:white;
-}
-
-.faq-reassurance h2{
-    font-size:40px;
-    margin-bottom:15px;
-}
-
-.faq-reassurance p{
-    font-size:18px;
-    margin-bottom:14px;
-}
-
-.faq-reassurance img{
-    width:100%;
-    height:330px;
-    object-fit:cover;
-    border-radius:28px;
-    box-shadow:0 14px 32px rgba(0,0,0,.10);
-}
-
-.faq-contact{
-    padding:45px 8%;
-    text-align:center;
-    background:linear-gradient(135deg,#7650c7,#d47bb5);
-    color:white;
-}
-
-.faq-contact h2{
-    color:white;
-    font-size:40px;
-    margin-bottom:14px;
-}
-
-.faq-contact p{
-    margin:8px 0;
-    font-size:17px;
-}
-
-.faq-contact a.contact-link{
-    color:white;
-    font-weight:800;
-    text-decoration:none;
-}
-
-.faq-contact .button{
-    margin-top:18px;
-}
-
-@media(max-width:950px){
-
-    .faq-page-hero,
-    .faq-intro,
-    .faq-reassurance{
-        grid-template-columns:1fr;
-    }
-
-    .faq-page-hero{
-        text-align:center;
-    }
-
-    .faq-page-hero p{
-        margin:auto;
-    }
-
-    .faq-image-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-    }
-
-    .faq-image-grid img:last-child{
-        grid-column:1 / -1;
-        height:290px;
-    }
-
-}
-
-@media(max-width:700px){
-
-    .faq-grid{
-        grid-template-columns:1fr;
-    }
-
-}
-
 @media(max-width:650px){
-
-    .faq-page-hero,
-    .faq-intro,
-    .faq-section,
-    .faq-visual-strip,
-    .faq-reassurance,
-    .faq-contact{
-        padding:35px 5%;
-    }
-
-    .faq-page-hero h2{
-        font-size:38px;
-    }
-
-    .faq-intro h2,
-    .faq-section h2,
-    .faq-visual-strip h2,
-    .faq-reassurance h2,
-    .faq-contact h2{
-        font-size:32px;
-    }
-
-    .faq-image-grid{
-        grid-template-columns:1fr;
-    }
-
-    .faq-image-grid img:last-child{
-        grid-column:auto;
-        height:240px;
-    }
-
-    .faq-page-hero img,
-    .faq-intro img,
-    .faq-reassurance img{
-        height:250px;
-    }
-
+  .page-hero,.page-section,.final-cta{padding:32px 5%}
+  .page-hero h2{font-size:39px}
+  .section-title,.panel h2,.final-cta h2{font-size:30px}
+  .grid-4,.grid-3,.grid-2{grid-template-columns:1fr}
+  .page-hero img{height:240px}
 }
-
-</style>
-
+.faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}@media(max-width:700px){.faq-grid{grid-template-columns:1fr}}</style>
 </head>
-
-
 <body>
-
-
 <header>
-
 <div class="logo-area">
-
 <img src="images/logo.png" alt="The StudyBase Logo">
-
-<div>
-
-<h1>The StudyBase</h1>
-
-<p>Study here. Succeed everywhere.</p>
-
+<div><h1>The StudyBase</h1><p>Study here. Succeed everywhere.</p></div>
 </div>
-
-</div>
-
-
 <nav>
-
 <ul>
-
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="services.html">Services</a></li>
@@ -324,303 +62,38 @@
 <li><a href="register.html">Register</a></li>
 <li><a href="contact.html">Contact</a></li>
 <li><a href="faq.html">FAQ</a></li>
-
 </ul>
-
 </nav>
-
 </header>
-
-
-<!-- FAQ HERO -->
-
-<section class="faq-page-hero">
-
-<div>
-
-<p class="welcome">PARENT QUESTIONS</p>
-
-<h2>
-Frequently Asked <span>Questions</span>
-</h2>
-
-<p>
-Everything parents need to know about tutoring, subjects, fees, learning support and getting started at The StudyBase.
-</p>
-
-<div>
-
-<a href="register.html" class="button">Register Your Learner</a>
-
-<a href="contact.html" class="button secondary">Ask Us Anything</a>
-
-</div>
-
-</div>
-
-<div>
-
-<img src="images/study5.png" alt="Learner studying and working through schoolwork">
-
-</div>
-
+<section class="page-hero">
+<div><p class="welcome">PARENT QUESTIONS</p><h2>Frequently Asked <span>Questions</span></h2><p>Everything parents need to know about tutoring, subjects, fees, learning support and getting started.</p><a href="contact.html" class="button">Ask Us Anything</a></div>
+<div><img src="images/study5.png" alt="Learner studying with a laptop"></div>
 </section>
 
-
-<!-- INTRO -->
-
-<section class="faq-intro">
-
-<div>
-
-<img src="images/study2.png" alt="Study desk with books, notes and stationery">
-
-</div>
-
-<div>
-
-<h2>Questions Are Always Welcome 💙</h2>
-
-<p>
-Choosing tutoring support for your child is an important decision, and we want parents to feel comfortable asking questions.
-</p>
-
-<p>
-Below are some of the things families most often want to know before getting started with The StudyBase.
-</p>
-
-<p>
-If your question is not listed, simply contact us and we will gladly help.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- FAQ GRID -->
-
-<section class="faq-section">
-
-<h2>Parents Want To Know</h2>
-
-<p>
-Here are the answers to some of our most frequently asked questions.
-</p>
-
+<section class="page-section">
+<h2 class="section-title">Parents Want To Know</h2>
 <div class="faq-grid">
-
-
-<div class="faq-card">
-
-<h3>📚 What grades do you tutor?</h3>
-
-<p>
-We support learners from <strong>Grade 4 to Grade 12</strong> with academic guidance, subject support, study skills and exam preparation.
-</p>
-
+<div class="soft-card"><h3>📚 What grades do you tutor?</h3><p>Grade 4 to Grade 12.</p></div>
+<div class="soft-card"><h3>📖 Which subjects do you offer?</h3><p>Mathematics, Mathematical Literacy, English, Afrikaans, Sciences, Accounting, Business Studies, Geography, History, Economics and EMS.</p></div>
+<div class="soft-card"><h3>💜 Do you support learners with ADHD or learning challenges?</h3><p>Yes. We adapt our approach and provide patient, personalised support.</p></div>
+<div class="soft-card"><h3>💰 What are your tutoring fees?</h3><p>Individual: <strong>R300/hour</strong><br>Small group: <strong>R250/learner/hour</strong></p></div>
+<div class="soft-card"><h3>👥 Why choose small group tutoring?</h3><p>Learners can interact while still receiving individual guidance.</p></div>
+<div class="soft-card"><h3>📝 How do I register?</h3><p>Complete the online registration form and we will contact you.</p></div>
+<div class="soft-card"><h3>📍 Where are you located?</h3><p>Northmead, Benoni, Gauteng.</p></div>
+<div class="soft-card"><h3>⏰ When are lessons available?</h3><p>Weekday afternoons and selected Saturday sessions by appointment.</p></div>
 </div>
-
-
-<div class="faq-card">
-
-<h3>📖 Which subjects do you offer?</h3>
-
-<p>
-We assist with a variety of subjects including Mathematics, Mathematical Literacy, English, Afrikaans, Sciences, Accounting, Business Studies, Geography, History, Economics and EMS.
-</p>
-
-</div>
-
-
-<div class="faq-card">
-
-<h3>💜 Do you support learners with ADHD or learning challenges?</h3>
-
-<p>
-Yes. We understand that every learner learns differently.
-</p>
-
-<p>
-We provide patient, personalised support and adapt our approach to learners who may experience ADHD, concentration challenges, different learning needs or study difficulties.
-</p>
-
-</div>
-
-
-<div class="faq-card">
-
-<h3>💰 What are your tutoring fees?</h3>
-
-<p>
-Individual tutoring:
-<br>
-<strong>R300 per hour</strong>
-</p>
-
-<p>
-Small group tutoring for two learners:
-<br>
-<strong>R250 per learner per hour</strong>
-</p>
-
-</div>
-
-
-<div class="faq-card">
-
-<h3>👥 Why choose small group tutoring?</h3>
-
-<p>
-Small groups give learners the opportunity to interact and learn together while still receiving individual guidance and personal attention.
-</p>
-
-</div>
-
-
-<div class="faq-card">
-
-<h3>📝 How do I register my child?</h3>
-
-<p>
-Simply complete our online registration form and we will contact you to discuss your learner's needs, availability and the most suitable tutoring option.
-</p>
-
-</div>
-
-
-<div class="faq-card">
-
-<h3>📍 Where are you located?</h3>
-
-<p>
-The StudyBase is located in <strong>Northmead, Benoni, Gauteng</strong>.
-</p>
-
-</div>
-
-
-<div class="faq-card">
-
-<h3>⏰ When are lessons available?</h3>
-
-<p>
-Lessons are available during weekday afternoons, with selected Saturday sessions available by appointment.
-</p>
-
-</div>
-
-
-</div>
-
 </section>
 
+<section class="page-section soft"><div class="split">
+<div class="panel"><h2>Still Have Questions?</h2><p>Contact us and we will gladly discuss your learner's needs, subjects and the most suitable tutoring option.</p><a href="contact.html" class="button">Contact Us</a></div>
+<div class="panel"><h2>Ready To Register?</h2><p>If you already know what support your learner needs, you can complete the registration form online.</p><a href="register.html" class="button">Register Your Learner</a></div>
+</div></section>
 
-<!-- VISUAL STRIP -->
-
-<section class="faq-visual-strip">
-
-<h2>A Place To Ask, Learn And Grow</h2>
-
-<p>
-No learner should feel embarrassed to ask a question. Sometimes the right explanation, in the right environment, is all it takes for something to finally click.
-</p>
-
-<div class="faq-image-grid">
-
-<img src="images/study1.png" alt="Tutor giving individual support">
-
-<img src="images/study3.png" alt="Small group tutoring and learning together">
-
-<img src="images/study6.png" alt="Organised books, notes and study materials">
-
-</div>
-
-</section>
-
-
-<!-- STILL HAVE QUESTIONS -->
-
-<section class="faq-reassurance">
-
-<div>
-
-<h2>Still Have Questions?</h2>
-
-<p>
-We would love to hear from you.
-</p>
-
-<p>
-Contact The StudyBase and we will gladly discuss your learner's needs, the subjects they need support with and how we can help make learning feel more manageable.
-</p>
-
-<p>
-There is no such thing as a silly question — from parents or learners. 💙
-</p>
-
-<a href="contact.html" class="button">
-Contact Us
-</a>
-
-</div>
-
-<div>
-
-<img src="images/study4.png" alt="Warm and welcoming StudyBase learning environment">
-
-</div>
-
-</section>
-
-
-<!-- CONTACT CTA -->
-
-<section class="faq-contact">
-
-<h2>Ready To Help Your Child Succeed?</h2>
-
-<p>📍 Northmead, Benoni</p>
-
-<p>🎓 Grades 4–12</p>
-
-<p>
-📞
-<a class="contact-link" href="tel:+27844119944">084 411 9944</a>
-&nbsp; | &nbsp;
-<a class="contact-link" href="tel:+27761392011">076 139 2011</a>
-</p>
-
-<p>
-📧
-<a class="contact-link" href="mailto:TheStudyBase01@gmail.com">TheStudyBase01@gmail.com</a>
-</p>
-
-<a href="register.html" class="button">
-Register Your Learner
-</a>
-
-</section>
-
-
+<section class="final-cta"><h2>We'd Love To Hear From You</h2><p>📞 <a class="contact-link" href="tel:+27844119944">084 411 9944</a> | <a class="contact-link" href="tel:+27761392011">076 139 2011</a></p></section>
 <footer>
-
 <h3>The StudyBase</h3>
-
-<p>
-Study here. Succeed everywhere.
-</p>
-
-<p>
-© 2026 The StudyBase. All Rights Reserved.
-</p>
-
+<p>Study here. Succeed everywhere.</p>
+<p>© 2026 The StudyBase. All Rights Reserved.</p>
 </footer>
-
-
 <script src="js/script.js"></script>
-
-
-</body>
-
-</html>
+</body></html>
