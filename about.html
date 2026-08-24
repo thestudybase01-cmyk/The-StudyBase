@@ -13,11 +13,199 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
+<style>
+
+.about-story {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.about-story h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.about-story .subtitle {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.about-story p {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.founders-section {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px 25px 70px;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.founder-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.founder-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.founder-card p {
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.founder-card .hello {
+    font-size: 1.15rem;
+}
+
+.personal-facts {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(180, 225, 235, 0.18);
+}
+
+.personal-facts p {
+    margin-bottom: 12px;
+}
+
+.personal-facts p:last-child {
+    margin-bottom: 0;
+}
+
+.special-message {
+    margin-top: 25px;
+    padding: 22px;
+    border-radius: 16px;
+    background: rgba(187, 170, 225, 0.13);
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.shared-section {
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.shared-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.shared-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+}
+
+.shared-section p {
+    line-height: 1.8;
+    margin-bottom: 17px;
+    font-size: 1.05rem;
+}
+
+.shared-values {
+    max-width: 650px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.shared-values p {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.studybase-born {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.studybase-born h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+}
+
+.studybase-born p {
+    max-width: 830px;
+    margin: 0 auto 17px;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.victories {
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.victories p {
+    margin-bottom: 10px;
+}
+
+.final-belief {
+    font-size: 1.25rem !important;
+    font-weight: 800;
+    margin-top: 30px !important;
+}
+
+.about-slogan {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.family-note {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 25px;
+    border-radius: 18px;
+    background: rgba(180, 225, 235, 0.15);
+}
+
+@media (max-width: 850px) {
+
+    .founders-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-story h2,
+    .shared-section h2,
+    .studybase-born h2 {
+        font-size: 2rem;
+    }
+
+    .founder-card {
+        padding: 28px 22px;
+    }
+}
+
+</style>
+
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -34,7 +222,6 @@
 </div>
 
 </div>
-
 
 <nav>
 
@@ -53,10 +240,6 @@
 
 </header>
 
-
-
-
-
 <section class="hero">
 
 <div class="hero-content">
@@ -66,160 +249,403 @@ About <span>The StudyBase</span>
 </h2>
 
 <p>
-Creating confident learners through support, guidance, and quality tutoring.
+Two friends. One shared dream. One place where every learner matters.
 </p>
 
 </div>
 
 </section>
 
+<section class="about-story">
 
+<h2>A little more about us...</h2>
 
-
-
-<section class="about-preview">
-
-
-<h2>Our Story</h2>
-
+<p class="subtitle">Two friends. One shared dream. 💙</p>
 
 <p>
-
-At The StudyBase, we believe that every learner has the ability to succeed when given the right support and learning environment.
-
-Our tutoring centre was created to provide learners with a safe, encouraging space where they can improve academically, build confidence, and develop skills that will help them succeed beyond the classroom.
-
+Our story started when we were just <strong>six years old</strong>.
 </p>
 
+<p>
+Since then, we have grown up together, followed completely different academic paths,
+built careers, got married, started families, faced some incredibly difficult seasons
+and celebrated some beautiful ones too.
+</p>
+
+<p>
+Through all of it, somehow our paths kept leading us back to one another.
+</p>
+
+<p>
+And eventually, they led us here.
+</p>
+
+<p>
+<strong><em>To The StudyBase.</em></strong>
+</p>
+
+<div class="family-note">
+
+<p>
+This dream may belong to the two of us, but we definitely haven't built it alone.
+Our husbands have supported us through the ideas, the planning, the late nights,
+the stress, the excitement and probably more StudyBase conversations than they
+ever expected! 😄
+</p>
+
+<p>
+And standing right beside them are our families — encouraging us, believing in us
+and supporting this dream every step of the way.
+</p>
+
+<p>
+<strong>
+The StudyBase really is something built with a whole lot of love behind it.
+</strong>
+</p>
+
+</div>
 
 </section>
 
+<section class="founders-section">
 
+<div class="founders-grid">
 
+<div class="founder-card">
 
+<h2>Meet Mrs C 📚💙</h2>
 
-<section class="why">
-
-
-<h2>Our Mission</h2>
-
-
-<div class="quote">
+<p class="hello">
+Hi! I'm <strong>Mrs C</strong>. 👋🏼
+</p>
 
 <p>
+Teaching has always been where my heart is.
+</p>
 
-To provide quality academic support that helps learners understand concepts, improve their results, and develop confidence in their own abilities.
+<p>
+I completed my <strong>Bachelor of Education degree, specialising in Educational Psychology</strong>,
+and I have now been a teacher for <strong>six years</strong>.
+</p>
 
+<p>
+During those years, I have had the privilege of working with so many different children —
+different personalities, different strengths, different struggles and, most importantly,
+different ways of learning.
+</p>
+
+<p>
+One of the areas closest to my heart is working with children who have
+<strong>additional or special learning needs</strong>, including learners with
+<strong>ADHD, dyslexia, OCD and other learning challenges</strong>.
+</p>
+
+<p>
+I strongly believe that a child who learns differently should never be made to feel incapable.
+</p>
+
+<p>
+Sometimes they simply need someone who is willing to find a different way to teach them.
+</p>
+
+<p>
+Since becoming a mom myself, that belief has become even stronger.
+</p>
+
+<div class="special-message">
+
+How would I want someone to treat my own child?
+
+<br><br>
+
+With patience.<br>
+With kindness.<br>
+With understanding.<br>
+With encouragement.<br>
+And with someone who refuses to give up on them.
+
+</div>
+
+<p style="margin-top: 25px;">
+That is exactly how I want every learner at The StudyBase to be treated.
+</p>
+
+<p>
+I'm incredibly driven, and once I've decided something matters to me,
+giving up isn't really an option!
+</p>
+
+<p>
+My strengths are definitely <strong>languages, studying, organisation, planning
+and finding ways to make difficult work feel a little less overwhelming</strong>.
+</p>
+
+<div class="personal-facts">
+
+<p><strong>And a few completely non-academic facts about me?</strong></p>
+
+<p>💙 I love <strong>blue</strong>.</p>
+
+<p>🐶 I absolutely adore <strong>dogs</strong>.</p>
+
+<p>🏊‍♀️ I love <strong>swimming</strong>.</p>
+
+<p>
+✨ And I may have just a <em>tiny</em> obsession with things being organised,
+clean and in their proper place...
+</p>
+
+<p>
+<strong>Okay FINE.</strong>
+</p>
+
+<p>
+Maybe slightly more than a <em>tiny</em> obsession. 😉😂
 </p>
 
 </div>
 
+</div>
+
+<div class="founder-card">
+
+<h2>Meet Mrs T 🐴📚🏃‍♀️</h2>
+
+<p class="hello">
+Hi! I'm <strong>Mrs T</strong>! 👋🏼
+</p>
+
+<p>
+My academic journey has definitely been a long one. I spent
+<strong>seven years studying towards my degrees</strong>, eventually completing my
+<strong>Master's degree in Clinical &amp; Experimental Pharmacology</strong>. 🎓
+</p>
+
+<p>
+I've always loved learning, especially when I'm faced with something challenging.
+Give me a difficult topic and I'll happily dig deeper, work through it and keep going
+until it finally makes sense! 🧠✨
+</p>
+
+<p>
+I'm definitely someone who believes that <strong>hard work pays off</strong>,
+and I love proving to myself that something difficult does not mean something impossible.
+</p>
+
+<p>
+While academics are a big part of who I am, there's much more to me too!
+</p>
+
+<div class="personal-facts">
+
+<p>
+🏃‍♀️ I'm currently training for <strong>long-distance running</strong>
+and love challenging myself physically as much as academically.
+</p>
+
+<p>
+🐴 I have a background in horse riding and competed in <strong>show jumping</strong>.
+It may have resulted in two broken shoulders along the way 😅,
+but my love for horses has never really disappeared.
+</p>
+
+<p>
+💪🏼 I love challenging myself, setting goals and pushing beyond what I thought I could do.
+</p>
+
+<p>
+🐶 I absolutely <strong>ADORE my dogs</strong>, and one of my favourite ways
+to spend the day is taking them to the dam.
+</p>
+
+<p>
+❤️ I treasure spending time with my close friends and family —
+the people who support, encourage and keep me grounded.
+</p>
+
+</div>
+
+<p style="margin-top: 25px;">
+I believe that learning isn't about being naturally "good" at something.
+</p>
+
+<p>
+It's about <strong>patience, persistence, hard work and having someone who believes in you along the way</strong>.
+</p>
+
+<p>
+That is something I want every learner I work with to feel.
+</p>
+
+<p>
+I'm so excited to bring my love for learning, determination,
+encouragement and a little bit of my own personality into every tutoring
+session at <strong>The StudyBase</strong>. 💙
+</p>
+
+</div>
+
+</div>
 
 </section>
 
+<section class="shared-section">
 
+<div class="shared-content">
 
-
-
-<section class="about-preview">
-
-
-<h2>Our Vision</h2>
-
+<h2>Different strengths. The same heart and goal. 💙</h2>
 
 <p>
-
-To become a trusted learning partner for families by creating an environment where learners feel supported, motivated, and inspired to achieve their goals.
-
+If you haven't figured it out yet, we are quite different.
 </p>
 
+<p>
+And that is exactly why this works.
+</p>
+
+<p>
+Where one of us may naturally see the language side of something,
+the other sees the numbers.
+</p>
+
+<p>
+Where one thinks creatively, the other may spot the structure.
+</p>
+
+<p>
+Where one starts an idea, the other helps turn it into a plan.
+</p>
+
+<p>
+And when one of us is having a difficult day, the other one is usually
+there to remind her why we started.
+</p>
+
+<p>
+We've been through <strong>a lot together</strong> over the years.
+</p>
+
+<p>
+We've grown up together, changed together and supported one another
+through different chapters of life.
+</p>
+
+<p>
+We also share a very important love...
+</p>
+
+<p style="font-size: 1.35rem;">
+<strong>Music. 🎶</strong>
+</p>
+
+<p>
+There is almost always a song for the situation — and if there isn't,
+we're probably going to find one.
+</p>
+
+<div class="shared-values">
+
+<p>💙 We both believe in working hard.</p>
+
+<p>💙 We both believe in kindness.</p>
+
+<p>
+💙 We both believe that confidence can completely change the way
+a child approaches learning.
+</p>
+
+<p>
+💙 And we both believe that sometimes all a learner needs is
+<strong>one person who refuses to stop believing in them.</strong>
+</p>
+
+</div>
+
+</div>
 
 </section>
 
+<section class="studybase-born">
 
-
-
-
-
-<section class="services">
-
-
-<h2>Our Values</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>💜 Support</h3>
+<h2>And so, The StudyBase was born...</h2>
 
 <p>
-Every learner deserves patience, encouragement, and guidance.
+The StudyBase was never meant to be just another tutoring centre.
+</p>
+
+<p>
+We wanted to create something more personal.
+</p>
+
+<p>
+A place where learning goes <strong>beyond textbooks and test marks</strong>.
+</p>
+
+<p>
+A place where we don't expect every learner to fit into exactly the same box.
+</p>
+
+<p>
+A place where we meet children where they are, figure out how
+<strong>they</strong> learn best and help them move forward from there.
+</p>
+
+<div class="victories">
+
+<p>Some victories might be an improved report.</p>
+
+<p>Others might be finally understanding fractions.</p>
+
+<p>Reading a paragraph without feeling afraid.</p>
+
+<p>Remembering a spelling rule.</p>
+
+<p>Passing a test they were convinced they would fail.</p>
+
+<p>Or simply saying:</p>
+
+<p style="font-size: 1.35rem;">
+<strong><em>"I think I can do this."</em></strong>
 </p>
 
 </div>
 
-
-
-<div class="card">
-
-<h3>📚 Excellence</h3>
-
 <p>
-We strive to help learners reach their highest potential.
+We celebrate all of them.
 </p>
 
-</div>
-
-
-
-
-<div class="card">
-
-<h3>🌱 Growth</h3>
-
 <p>
-We focus on improvement, confidence, and lifelong learning.
+Because every little step matters.
 </p>
 
-</div>
+<p class="final-belief">
+And if a learner walks out of The StudyBase believing in themselves
+just a little more than when they walked in, then we know we are doing
+exactly what we set out to do.
+</p>
 
-
-
-</div>
-
+<p class="about-slogan">
+Study here. Succeed everywhere. 💙
+</p>
 
 </section>
-
-
-
-
-
 
 <section class="contact">
-
 
 <h2>
 Join The StudyBase Family
 </h2>
 
-
 <p>
 Grades 4–12 | Northmead, Benoni
 </p>
-
 
 <a href="register.html" class="button">
 Register Today
 </a>
 
-
 </section>
-
-
-
-
 
 <footer>
 
@@ -233,14 +659,9 @@ Study here. Succeed everywhere.
 © 2026 The StudyBase. All Rights Reserved.
 </p>
 
-
 </footer>
 
-
-
-
 <script src="js/script.js"></script>
-
 
 </body>
 
