@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>About Us | The StudyBase</title>
+
+<meta name="description" content="Meet Mrs C and Mrs T, the two lifelong friends behind The StudyBase in Northmead, Benoni.">
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
@@ -15,189 +16,406 @@
 
 <style>
 
-.about-story {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 70px 25px;
-    text-align: center;
+/* ==========================
+   ABOUT PAGE - SPECIAL FULL LAYOUT
+========================== */
+
+.about-hero{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:45px;
+    padding:55px 8%;
+    background:linear-gradient(135deg,#fff1f8,#eef8ff,#f6efff);
 }
 
-.about-story h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
-    margin-bottom: 10px;
+.about-hero h2{
+    font-size:56px;
+    line-height:1.12;
+    margin-bottom:18px;
 }
 
-.about-story .subtitle {
-    font-size: 1.25rem;
-    font-weight: 800;
-    margin-bottom: 30px;
+.about-hero h2 span{
+    color:#7650c7;
 }
 
-.about-story p {
-    max-width: 850px;
-    margin: 0 auto 18px;
-    line-height: 1.8;
-    font-size: 1.05rem;
+.about-hero p{
+    font-size:19px;
+    max-width:700px;
 }
 
-.founders-section {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 20px 25px 70px;
+.about-hero img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
-.founders-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+.story-section{
+    display:grid;
+    grid-template-columns:1.08fr .92fr;
+    gap:42px;
+    align-items:stretch;
+    padding:50px 8%;
+    background:white;
 }
 
-.founder-card {
-    background: #ffffff;
-    border-radius: 22px;
-    padding: 35px;
-    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
-    text-align: left;
+.story-copy,
+.story-side{
+    height:100%;
 }
 
-.founder-card h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
+.story-copy h2{
+    font-size:42px;
+    margin-bottom:8px;
 }
 
-.founder-card p {
-    line-height: 1.8;
-    margin-bottom: 16px;
+.story-copy .subtitle{
+    font-size:20px;
+    font-weight:800;
+    color:#7650c7;
+    margin-bottom:22px;
 }
 
-.founder-card .hello {
-    font-size: 1.15rem;
+.story-copy p{
+    font-size:18px;
+    margin-bottom:14px;
 }
 
-.personal-facts {
-    margin-top: 25px;
-    padding: 20px;
-    border-radius: 16px;
-    background: rgba(180, 225, 235, 0.18);
+.story-side{
+    display:grid;
+    grid-template-rows:1fr auto;
+    gap:20px;
 }
 
-.personal-facts p {
-    margin-bottom: 12px;
+.story-side img{
+    width:100%;
+    height:100%;
+    min-height:310px;
+    object-fit:cover;
+    border-radius:28px;
+    box-shadow:0 14px 32px rgba(0,0,0,.10);
 }
 
-.personal-facts p:last-child {
-    margin-bottom: 0;
+.family-note{
+    padding:24px;
+    border-radius:22px;
+    background:linear-gradient(135deg,#f8f1ff,#eef8ff);
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
 }
 
-.special-message {
-    margin-top: 25px;
-    padding: 22px;
-    border-radius: 16px;
-    background: rgba(187, 170, 225, 0.13);
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.7;
+.family-note p{
+    margin-bottom:12px;
 }
 
-.shared-section {
-    padding: 70px 25px;
-    text-align: center;
+.family-note p:last-child{
+    margin-bottom:0;
 }
 
-.shared-content {
-    max-width: 900px;
-    margin: 0 auto;
+.founder-section{
+    display:grid;
+    grid-template-columns:.92fr 1.08fr;
+    gap:42px;
+    align-items:stretch;
+    padding:50px 8%;
 }
 
-.shared-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.3rem;
-    margin-bottom: 25px;
+.founder-section.alt{
+    grid-template-columns:1.08fr .92fr;
+    background:white;
 }
 
-.shared-section p {
-    line-height: 1.8;
-    margin-bottom: 17px;
-    font-size: 1.05rem;
+.founder-visual{
+    display:grid;
+    grid-template-rows:1fr auto;
+    gap:20px;
+    min-width:0;
 }
 
-.shared-values {
-    max-width: 650px;
-    margin: 30px auto;
-    text-align: left;
+.founder-visual img{
+    width:100%;
+    height:100%;
+    min-height:420px;
+    object-fit:cover;
+    border-radius:28px;
+    box-shadow:0 14px 32px rgba(0,0,0,.10);
 }
 
-.shared-values p {
-    font-weight: 700;
-    margin-bottom: 12px;
+.founder-text{
+    background:white;
+    padding:34px;
+    border-radius:28px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    border-top:6px solid #c9b6e4;
 }
 
-.studybase-born {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 70px 25px;
-    text-align: center;
+.founder-section.alt .founder-text{
+    background:linear-gradient(135deg,#fffafd,#fbf8ff);
 }
 
-.studybase-born h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
-    margin-bottom: 25px;
+.founder-text h2{
+    font-size:38px;
+    margin-bottom:16px;
 }
 
-.studybase-born p {
-    max-width: 830px;
-    margin: 0 auto 17px;
-    line-height: 1.8;
-    font-size: 1.05rem;
+.founder-text .hello{
+    font-size:19px;
+    margin-bottom:14px;
 }
 
-.victories {
-    max-width: 650px;
-    margin: 30px auto;
+.founder-text p{
+    font-size:17px;
+    margin-bottom:13px;
 }
 
-.victories p {
-    margin-bottom: 10px;
+.special-message{
+    margin:22px 0;
+    padding:22px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#f8f1ff,#eef8ff);
+    text-align:center;
+    font-weight:700;
+    line-height:1.7;
 }
 
-.final-belief {
-    font-size: 1.25rem !important;
-    font-weight: 800;
-    margin-top: 30px !important;
+.personal-facts{
+    padding:20px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#fff5fb,#f3f9ff);
 }
 
-.about-slogan {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.65rem;
-    font-weight: 700;
-    margin-top: 35px;
+.personal-facts p{
+    margin-bottom:10px;
 }
 
-.family-note {
-    max-width: 850px;
-    margin: 35px auto 0;
-    padding: 25px;
-    border-radius: 18px;
-    background: rgba(180, 225, 235, 0.15);
+.personal-facts p:last-child{
+    margin-bottom:0;
 }
 
-@media (max-width: 850px) {
+.mini-quote{
+    padding:20px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#fff5fb,#f3f9ff);
+    text-align:center;
+    font-weight:800;
+    color:#5d4383;
+}
 
-    .founders-grid {
-        grid-template-columns: 1fr;
+.shared-section{
+    padding:50px 8%;
+    background:linear-gradient(135deg,#f8f1ff,#eef8ff);
+}
+
+.shared-section h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.shared-section > p{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 28px;
+    font-size:18px;
+}
+
+.shared-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:22px;
+    margin-bottom:28px;
+}
+
+.shared-card{
+    background:white;
+    padding:26px 22px;
+    border-radius:24px;
+    box-shadow:0 10px 25px rgba(0,0,0,.07);
+    text-align:center;
+}
+
+.shared-card .icon{
+    display:block;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.shared-card h3{
+    color:#7650c7;
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.shared-image-row{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:22px;
+}
+
+.shared-image-row img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:24px;
+    box-shadow:0 12px 28px rgba(0,0,0,.10);
+}
+
+.born-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:42px;
+    align-items:center;
+    padding:50px 8%;
+    background:white;
+}
+
+.born-section h2{
+    font-size:42px;
+    margin-bottom:16px;
+}
+
+.born-section p{
+    font-size:18px;
+    margin-bottom:14px;
+}
+
+.born-section img{
+    width:100%;
+    height:390px;
+    object-fit:cover;
+    border-radius:28px;
+    box-shadow:0 14px 32px rgba(0,0,0,.10);
+}
+
+.victory-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    margin:22px 0;
+}
+
+.victory{
+    padding:14px 16px;
+    background:linear-gradient(135deg,#fff7fb,#f3f9ff);
+    border-radius:16px;
+    font-weight:700;
+}
+
+.final-belief{
+    margin-top:18px;
+    padding:20px;
+    border-radius:18px;
+    background:#faf6ff;
+    font-weight:800;
+}
+
+.about-final{
+    padding:46px 8%;
+    text-align:center;
+    background:linear-gradient(135deg,#7650c7,#d47bb5);
+    color:white;
+}
+
+.about-final h2{
+    color:white;
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.about-final p{
+    font-size:18px;
+    margin:8px 0;
+}
+
+.about-final a.contact-link{
+    color:white;
+    text-decoration:none;
+    font-weight:800;
+}
+
+.about-final .button{
+    margin-top:18px;
+}
+
+@media(max-width:1000px){
+    .about-hero,
+    .story-section,
+    .founder-section,
+    .founder-section.alt,
+    .born-section{
+        grid-template-columns:1fr;
     }
 
-    .about-story h2,
+    .about-hero{
+        text-align:center;
+    }
+
+    .about-hero p{
+        margin:auto;
+    }
+
+    .shared-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .shared-image-row{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .shared-image-row img:last-child{
+        grid-column:1 / -1;
+        height:280px;
+    }
+
+    .founder-visual img{
+        min-height:320px;
+    }
+}
+
+@media(max-width:650px){
+    .about-hero,
+    .story-section,
+    .founder-section,
+    .shared-section,
+    .born-section,
+    .about-final{
+        padding:35px 5%;
+    }
+
+    .about-hero h2{
+        font-size:40px;
+    }
+
+    .story-copy h2,
+    .founder-text h2,
     .shared-section h2,
-    .studybase-born h2 {
-        font-size: 2rem;
+    .born-section h2,
+    .about-final h2{
+        font-size:32px;
     }
 
-    .founder-card {
-        padding: 28px 22px;
+    .founder-text{
+        padding:24px 20px;
+    }
+
+    .shared-grid,
+    .shared-image-row,
+    .victory-grid{
+        grid-template-columns:1fr;
+    }
+
+    .shared-image-row img:last-child{
+        grid-column:auto;
+        height:230px;
+    }
+
+    .about-hero img,
+    .story-side img,
+    .founder-visual img,
+    .born-section img{
+        height:260px;
+        min-height:0;
     }
 }
 
@@ -214,49 +432,60 @@
 <img src="images/logo.png" alt="The StudyBase Logo">
 
 <div>
-
 <h1>The StudyBase</h1>
-
 <p>Study here. Succeed everywhere.</p>
-
 </div>
 
 </div>
 
 <nav>
-
 <ul>
-
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="services.html">Services</a></li>
 <li><a href="subjects.html">Subjects</a></li>
 <li><a href="register.html">Register</a></li>
 <li><a href="contact.html">Contact</a></li>
-
+<li><a href="faq.html">FAQ</a></li>
 </ul>
-
 </nav>
 
 </header>
 
-<section class="hero">
+<!-- HERO -->
 
-<div class="hero-content">
+<section class="about-hero">
+
+<div>
+
+<p class="welcome">THE PEOPLE BEHIND THE STUDYBASE</p>
 
 <h2>
-About <span>The StudyBase</span>
+Two friends. One shared dream. <span>A whole lot of heart.</span>
 </h2>
 
 <p>
-Two friends. One shared dream. One place where every learner matters.
+Our story started when we were six years old — and after years of growing, learning, building careers and walking through life together, it somehow led us here.
 </p>
 
+<div>
+<a href="register.html" class="button">Join The StudyBase</a>
+<a href="contact.html" class="button secondary">Contact Us</a>
+</div>
+
+</div>
+
+<div>
+<img src="images/study4.png" alt="Warm and welcoming StudyBase learning space">
 </div>
 
 </section>
 
-<section class="about-story">
+<!-- OUR STORY -->
+
+<section class="story-section">
+
+<div class="story-copy">
 
 <h2>A little more about us...</h2>
 
@@ -284,6 +513,12 @@ And eventually, they led us here.
 <strong><em>To The StudyBase.</em></strong>
 </p>
 
+</div>
+
+<div class="story-side">
+
+<img src="images/study2.png" alt="Books, stationery and a calm study desk">
+
 <div class="family-note">
 
 <p>
@@ -299,20 +534,30 @@ and supporting this dream every step of the way.
 </p>
 
 <p>
-<strong>
-The StudyBase really is something built with a whole lot of love behind it.
-</strong>
+<strong>The StudyBase really is something built with a whole lot of love behind it.</strong>
 </p>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="founders-section">
+<!-- MRS C -->
 
-<div class="founders-grid">
+<section class="founder-section">
 
-<div class="founder-card">
+<div class="founder-visual">
+
+<img src="images/study1.png" alt="Personalised tutoring and learner support">
+
+<div class="mini-quote">
+“Treat every learner with the patience, kindness and encouragement I would want for my own child.” 💙
+</div>
+
+</div>
+
+<div class="founder-text">
 
 <h2>Meet Mrs C 📚💙</h2>
 
@@ -367,7 +612,7 @@ And with someone who refuses to give up on them.
 
 </div>
 
-<p style="margin-top: 25px;">
+<p>
 That is exactly how I want every learner at The StudyBase to be treated.
 </p>
 
@@ -384,31 +629,24 @@ and finding ways to make difficult work feel a little less overwhelming</strong>
 <div class="personal-facts">
 
 <p><strong>And a few completely non-academic facts about me?</strong></p>
-
 <p>💙 I love <strong>blue</strong>.</p>
-
 <p>🐶 I absolutely adore <strong>dogs</strong>.</p>
-
 <p>🏊‍♀️ I love <strong>swimming</strong>.</p>
-
-<p>
-✨ And I may have just a <em>tiny</em> obsession with things being organised,
-clean and in their proper place...
-</p>
-
-<p>
-<strong>Okay FINE.</strong>
-</p>
-
-<p>
-Maybe slightly more than a <em>tiny</em> obsession. 😉😂
-</p>
+<p>✨ And I may have just a <em>tiny</em> obsession with things being organised, clean and in their proper place...</p>
+<p><strong>Okay FINE.</strong></p>
+<p>Maybe slightly more than a <em>tiny</em> obsession. 😉😂</p>
 
 </div>
 
 </div>
 
-<div class="founder-card">
+</section>
+
+<!-- MRS T -->
+
+<section class="founder-section alt">
+
+<div class="founder-text">
 
 <h2>Meet Mrs T 🐴📚🏃‍♀️</h2>
 
@@ -439,34 +677,19 @@ While academics are a big part of who I am, there's much more to me too!
 
 <div class="personal-facts">
 
-<p>
-🏃‍♀️ I'm currently training for <strong>long-distance running</strong>
-and love challenging myself physically as much as academically.
-</p>
+<p>🏃‍♀️ I'm currently training for <strong>long-distance running</strong> and love challenging myself physically as much as academically.</p>
 
-<p>
-🐴 I have a background in horse riding and competed in <strong>show jumping</strong>.
-It may have resulted in two broken shoulders along the way 😅,
-but my love for horses has never really disappeared.
-</p>
+<p>🐴 I have a background in horse riding and competed in <strong>show jumping</strong>. It may have resulted in two broken shoulders along the way 😅, but my love for horses has never really disappeared.</p>
 
-<p>
-💪🏼 I love challenging myself, setting goals and pushing beyond what I thought I could do.
-</p>
+<p>💪🏼 I love challenging myself, setting goals and pushing beyond what I thought I could do.</p>
 
-<p>
-🐶 I absolutely <strong>ADORE my dogs</strong>, and one of my favourite ways
-to spend the day is taking them to the dam.
-</p>
+<p>🐶 I absolutely <strong>ADORE my dogs</strong>, and one of my favourite ways to spend the day is taking them to the dam.</p>
 
-<p>
-❤️ I treasure spending time with my close friends and family —
-the people who support, encourage and keep me grounded.
-</p>
+<p>❤️ I treasure spending time with my close friends and family — the people who support, encourage and keep me grounded.</p>
 
 </div>
 
-<p style="margin-top: 25px;">
+<p>
 I believe that learning isn't about being naturally "good" at something.
 </p>
 
@@ -486,87 +709,73 @@ session at <strong>The StudyBase</strong>. 💙
 
 </div>
 
+<div class="founder-visual">
+
+<img src="images/study5.png" alt="Focused studying and learning">
+
+<div class="mini-quote">
+“Something difficult does not mean something impossible.” 🧠✨
+</div>
+
 </div>
 
 </section>
 
-<section class="shared-section">
+<!-- SHARED -->
 
-<div class="shared-content">
+<section class="shared-section">
 
 <h2>Different strengths. The same heart and goal. 💙</h2>
 
 <p>
-If you haven't figured it out yet, we are quite different.
+If you haven't figured it out yet, we are quite different — and that is exactly why this works.
 </p>
 
-<p>
-And that is exactly why this works.
-</p>
+<div class="shared-grid">
 
-<p>
-Where one of us may naturally see the language side of something,
-the other sees the numbers.
-</p>
+<div class="shared-card">
+<span class="icon">📖</span>
+<h3>Languages + Learning</h3>
+<p>One of us naturally sees the language side; the other loves numbers and structure.</p>
+</div>
 
-<p>
-Where one thinks creatively, the other may spot the structure.
-</p>
+<div class="shared-card">
+<span class="icon">🎨</span>
+<h3>Creativity + Structure</h3>
+<p>Where one thinks creatively, the other may spot the plan, pattern or structure.</p>
+</div>
 
-<p>
-Where one starts an idea, the other helps turn it into a plan.
-</p>
+<div class="shared-card">
+<span class="icon">🎶</span>
+<h3>Music</h3>
+<p>There is almost always a song for the situation — and if there isn't, we'll probably find one.</p>
+</div>
 
-<p>
-And when one of us is having a difficult day, the other one is usually
-there to remind her why we started.
-</p>
-
-<p>
-We've been through <strong>a lot together</strong> over the years.
-</p>
-
-<p>
-We've grown up together, changed together and supported one another
-through different chapters of life.
-</p>
-
-<p>
-We also share a very important love...
-</p>
-
-<p style="font-size: 1.35rem;">
-<strong>Music. 🎶</strong>
-</p>
-
-<p>
-There is almost always a song for the situation — and if there isn't,
-we're probably going to find one.
-</p>
-
-<div class="shared-values">
-
-<p>💙 We both believe in working hard.</p>
-
-<p>💙 We both believe in kindness.</p>
-
-<p>
-💙 We both believe that confidence can completely change the way
-a child approaches learning.
-</p>
-
-<p>
-💙 And we both believe that sometimes all a learner needs is
-<strong>one person who refuses to stop believing in them.</strong>
-</p>
+<div class="shared-card">
+<span class="icon">💙</span>
+<h3>Same Values</h3>
+<p>Hard work, kindness, confidence and refusing to stop believing in a learner.</p>
+</div>
 
 </div>
+
+<div class="shared-image-row">
+
+<img src="images/study3.png" alt="Learning together in a small group">
+
+<img src="images/study6.png" alt="Books, notes and stationery">
+
+<img src="images/study2.png" alt="Organised study desk">
 
 </div>
 
 </section>
 
-<section class="studybase-born">
+<!-- BORN -->
+
+<section class="born-section">
+
+<div>
 
 <h2>And so, The StudyBase was born...</h2>
 
@@ -587,63 +796,58 @@ A place where we don't expect every learner to fit into exactly the same box.
 </p>
 
 <p>
-A place where we meet children where they are, figure out how
-<strong>they</strong> learn best and help them move forward from there.
+A place where we meet children where they are, figure out how <strong>they</strong> learn best and help them move forward from there.
 </p>
 
-<div class="victories">
+<div class="victory-grid">
 
-<p>Some victories might be an improved report.</p>
-
-<p>Others might be finally understanding fractions.</p>
-
-<p>Reading a paragraph without feeling afraid.</p>
-
-<p>Remembering a spelling rule.</p>
-
-<p>Passing a test they were convinced they would fail.</p>
-
-<p>Or simply saying:</p>
-
-<p style="font-size: 1.35rem;">
-<strong><em>"I think I can do this."</em></strong>
-</p>
+<div class="victory">📈 An improved report</div>
+<div class="victory">➗ Finally understanding fractions</div>
+<div class="victory">📖 Reading without feeling afraid</div>
+<div class="victory">✍️ Remembering a spelling rule</div>
+<div class="victory">✅ Passing a test they thought they would fail</div>
+<div class="victory">💙 “I think I can do this.”</div>
 
 </div>
 
 <p>
-We celebrate all of them.
+We celebrate all of them. Because every little step matters.
 </p>
 
-<p>
-Because every little step matters.
-</p>
+<div class="final-belief">
+And if a learner walks out of The StudyBase believing in themselves just a little more than when they walked in, then we know we are doing exactly what we set out to do.
+</div>
 
-<p class="final-belief">
-And if a learner walks out of The StudyBase believing in themselves
-just a little more than when they walked in, then we know we are doing
-exactly what we set out to do.
-</p>
+</div>
 
-<p class="about-slogan">
-Study here. Succeed everywhere. 💙
-</p>
+<div>
+
+<img src="images/study4.png" alt="Welcoming StudyBase learning environment">
+
+</div>
 
 </section>
 
-<section class="contact">
+<!-- FINAL -->
 
-<h2>
-Join The StudyBase Family
-</h2>
+<section class="about-final">
+
+<h2>Join The StudyBase Family 💙</h2>
+
+<p>Grades 4–12 | Northmead, Benoni</p>
 
 <p>
-Grades 4–12 | Northmead, Benoni
+📞
+<a class="contact-link" href="tel:+27844119944">084 411 9944</a>
+&nbsp; | &nbsp;
+<a class="contact-link" href="tel:+27761392011">076 139 2011</a>
 </p>
 
-<a href="register.html" class="button">
-Register Today
-</a>
+<p>Study here. Succeed everywhere.</p>
+
+<a href="register.html" class="button">Register Today</a>
+
+<a href="contact.html" class="button secondary">Contact Us</a>
 
 </section>
 
@@ -651,13 +855,9 @@ Register Today
 
 <h3>The StudyBase</h3>
 
-<p>
-Study here. Succeed everywhere.
-</p>
+<p>Study here. Succeed everywhere.</p>
 
-<p>
-© 2026 The StudyBase. All Rights Reserved.
-</p>
+<p>© 2026 The StudyBase. All Rights Reserved.</p>
 
 </footer>
 
